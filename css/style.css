@@ -7,8 +7,20 @@
          url('../font/freightsansprobold-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-	
-
+}
+@font-face {
+  font-family: 'freightsans_prosemibold';
+  src: url('../font/FreightSansProSemibold-Regular.woff2') format('woff2'),
+       url('../font/FreightSansProSemibold-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'freightsans_probook';
+  src: url('../font/FreightSansProBook-Regular.woff2') format('woff2'),
+       url('../font/FreightSansProBook-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
     font-family: 'freightsansprfreightsansproBk';
@@ -36,8 +48,20 @@
          url('../font/new_order_semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+ }
+ @font-face {
+  font-family: 'New Order';
+  src: url('../font/NewOrder-Bold.eot');
+  src: url('../font/NewOrder-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/NewOrder-Bold.woff2') format('woff2'),
+      url('../font/NewOrder-Bold.woff') format('woff'),
+      url('../font/NewOrder-Bold.ttf') format('truetype'),
+      url('../font/NewOrder-Bold.svg#NewOrder-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
+
 /*menu*/
 .ftco-navbar-light {
   
@@ -164,51 +188,3 @@
     margin-right: 1rem !important; }
 
 
-/* mujahidul style */
-/* font implement */
-@font-face {
-  font-family: PetcoCircularTT-Regular;
-  src: url(assets/fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
-    url(assets/fonts/PetcoCircularTT-Regular.woff) format("woff");
-}
-/* font implement */
-.efi_incorporate_area{
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  background-color: #003283;
-}
-.efi_incorporate_header{
-  max-width: 1148px;
-  margin: 0px auto;
-}
-.efi_incorporate_header h1{
-  font-size: 40px;
-  line-height: 95px;
-  text-align: center;
-  color: #FDFBDF;
-}
-/* .efi_incorporate_features{
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-} */
-.efi_incorporate_feature_item{
-  /* max-width: 33.33%; */
-  /* max-width: 642px;
-  max-height: 504px; */
-}
-.efi_incorporate_feature_item h1{
-  font-size: 12px;
-}
-.efi_incorporate_feature_item img{
-  max-width: 200px;
-}
-.efi_incorporate_feature_item h2{
-  font-size: 8px;
-}
-.efi_incorporate_feature_item p{
-  font-size: 5px;
-}
-
-/* mujahidul style e */
