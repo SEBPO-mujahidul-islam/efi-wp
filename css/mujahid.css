@@ -619,6 +619,13 @@
     .MobShow{
       display: none; 
     }
+    .efi_thedata_feature_item{
+      max-height: 180px;
+    }
+    .efi_incorporate_feature_item{
+      max-height: 180px;
+    }
+
   }
   /* mujahidul style e */
 
