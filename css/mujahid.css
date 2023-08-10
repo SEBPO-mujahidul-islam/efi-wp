@@ -357,7 +357,7 @@
     }
     /* the data e */
   }
-  @media all and (max-width: 1023px){
+  @media all and (max-width: 1024px){
     /* incorporate  */
     .efi_the_data_header {
       max-width: 1148px;
@@ -418,10 +418,88 @@
 
 
     /* The Data */
+    .efi_incorporate_header {
+      max-width: 1148px;
+      margin: 40px auto;
+    }
+    .efi_incorporate_header h2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    .efi_incorporate_feature_item h1{
+      font-size: 58px;
+      line-height: 32px;
+    }
+    .efi_incorporate_feature_item.one h2{
+      font-size: 30px;
+      line-height: 34px;
+    }
+    .efi_incorporate_feature_item h3{
+      font-size: 26px;
+      line-height: 22px;
+    }
+    .efi_incorporate_feature_item p, .efi_incorporate_overlay_content p {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    .efi_incorporate_overlay_content p{
+      max-width: 95%;
+    }
+    .efi_incorporate_feature_item.four p{
+      line-height: 18px;
+    }
+    .efi_incorporate_feature_item.two img {
+      max-width: 92px;
+    }
+    .efi_incorporate_feature_item.two h5 {
+      font-size: 18px;
+      top: 36%;
+      left: 43%;
+    }
+    .efi_incorporate_feature_item h5 {
+      font-size: 20px;
+      line-height: 20px;
+      top: 30%;
+      left: 39%;
+    }
+    .efi_incorporate_feature_item.three img {
+      max-width: 85px;
+      padding-bottom: 10px;
+    }
+    .efi_incorporate_feature_item.four img {
+      max-width: 111px;
+      padding-bottom: 10px;
+    }
+    .efi_incorporate_feature_item.five h2 {
+      font-size: 34px;
+      line-height: 38px;
+  }
+    .efi_incorporate_feature_item.six img {
+      max-width: 110px;
+    }
+    .efi_incorporate_feature_item.six h1{
+      line-height: 36px;
+    }
+    .efi_incorporate_feature_item {
+      max-height: 210px;
+      padding: 15px;
+    }
+    .overlayBtmtoTop{
+      padding: 0px 15px;
+    }
 
     /* The Data e */
   }
-  @media all and (max-width: 768px) {
+
+  @media all and (min-width: 768px) {
+    
+  }
+  @media all and (min-width: 768px) {
+    .MobShow{
+      display: none; 
+    }
+  }
+  @media all and (max-width: 767px) {
     /* incorporate  */
     .efi_thedata_feature_item.one{
       border-bottom: 4px solid #FDFBDF;
@@ -443,10 +521,97 @@
       border-right: 4px solid #FDFBDF;
     }
     .efi_thedata_feature_item {
-      max-height: 180px;
+      /* max-height: 180px; */
       padding: 7px;
-  }
+    }
+    .efi_thedata_feature_item h1 {
+      font-size: 45px;
+      line-height: 20px;
+    }
+    .efi_thedata_feature_item.one h2 {
+      font-size: 23px;
+      line-height: 14px;
+    }
+    .efi_thedata_feature_item h3 {
+      font-size: 16px;
+      line-height: 10px;
+    }
+    .efi_thedata_feature_item p, .efi_thedata_overlay_content p {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .efi_thedata_feature_item.four img {
+      max-width: 88px;
+    }
+    .efi_thedata_feature_item.five h2 {
+      font-size: 29px;
+      line-height: 14px;
+    }
+    .efi_thedata_feature_item.six img {
+      max-width: 80px;
+    }
     /* incorporate e */
+
+    /* the data */
+    .efi_incorporate_feature_item.one{
+      border-bottom: 4px solid #FDFBDF;
+      border-right: 4px solid #FDFBDF;
+    }
+    .efi_incorporate_feature_item.two{
+      border-bottom: 4px solid #FDFBDF;
+      border-right: none;
+    }
+    .efi_incorporate_feature_item.three{
+      border-bottom: 4px solid #FDFBDF;
+      border-right: 4px solid #FDFBDF;
+    }
+    .efi_incorporate_feature_item.four{
+      border-bottom: 4px solid #FDFBDF;
+      border-right: none;
+    }
+    .efi_incorporate_feature_item.five{
+      border-right: 4px solid #FDFBDF;
+    }
+    .efi_incorporate_feature_item {
+      padding: 7px;
+    }
+    .efi_incorporate_feature_item h1 {
+      font-size: 50px;
+      line-height: 40px;
+    }
+    .efi_incorporate_feature_item.one h2 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    .efi_incorporate_feature_item h3 {
+      font-size: 23px;
+      line-height: 10px;
+    }
+    .efi_incorporate_feature_item p, .efi_incorporate_overlay_content p {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .efi_incorporate_feature_item.three img {
+      max-width: 62px;
+      padding-bottom: 8px;
+    }
+    .efi_incorporate_feature_item.four img {
+      max-width: 88px;
+    }
+    .efi_incorporate_feature_item.five h2 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    .efi_incorporate_feature_item h5 {
+      font-size: 16px;
+      line-height: 18px;
+      top: 29%;
+      left: 41%;
+    }
+    .efi_incorporate_feature_item.six img {
+      max-width: 80px;
+    }
+    /* the data e */
 
   }
 
