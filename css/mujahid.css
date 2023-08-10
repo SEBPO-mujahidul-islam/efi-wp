@@ -616,7 +616,9 @@
   }
 
   @media all and (max-width: 430px) {
-
+    .MobShow{
+      display: none; 
+    }
   }
   /* mujahidul style e */
 
