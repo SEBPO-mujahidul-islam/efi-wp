@@ -502,7 +502,7 @@
     }
     .efi_testimonial_area{
       /* max-height: 600px; */
-      max-height: 400px;
+      max-height: 550px;
     }
     /* Testimonial e max-1024px */
 
@@ -580,11 +580,15 @@
     /* The Data e max-1024px */
   }
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 767px) {
+    .efi_testimonial_area{
+      /* max-height: 600px; */
+      max-height: 440px;
+    }
     .efi_testimonials{
       display: none;
     }
-    .citrusStella_carousel{
+    .efi_testimonial_carousel{
       padding: 12% 0% 4% 0%;
     }    
     .efi_testimonial_item_txt{
@@ -608,7 +612,7 @@
       display: none;
       height: 0px;
     }
-    .citrusStella_carousel-item, .citrusStella_carousel-indicators {
+    .efi_testimonial_carousel-item, .efi_testimonial_carousel-indicators {
       display: none;
     }
   }

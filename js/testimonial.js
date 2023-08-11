@@ -1,18 +1,18 @@
 /*----------------------
 ---- RoW slider js -----
 ------------------------*/
-let citrusStella_carousel = document.querySelector(".citrusStella_carousel");
+let efi_testimonial_carousel = document.querySelector(".efi_testimonial_carousel");
 
-let citrusStella_carouselInner = document.querySelector(
-  ".citrusStella_carousel-inner"
+let efi_testimonial_carouselInner = document.querySelector(
+  ".efi_testimonial_carousel-inner"
 );
 
-let prev = document.querySelector(".citrusStella_carousel-controls .prev");
+let prev = document.querySelector(".efi_testimonial_carousel-controls .prev");
 
-let next = document.querySelector(".citrusStella_carousel-controls .next");
+let next = document.querySelector(".efi_testimonial_carousel-controls .next");
 
 let slides = document.querySelectorAll(
-  ".citrusStella_carousel-inner .citrusStella_carousel-item"
+  ".efi_testimonial_carousel-inner .efi_testimonial_carousel-item"
 );
 
 let totalSlides = slides.length;
@@ -31,12 +31,12 @@ let interval = 5000; /*5000*/
 
 let time;
 
-//Init citrusStella_carousel
-citrusStella_carouselInner.style.minWidth = totalSlides * 100 + "%";
+//Init efi_testimonial_carousel
+efi_testimonial_carouselInner.style.minWidth = totalSlides * 100 + "%";
 loadIndicators();
 loop(true);
 
-//citrusStella_carousel events
+//efi_testimonial_carousel events
 
 next.addEventListener("click", () => {
   slideToNext();
@@ -46,53 +46,53 @@ prev.addEventListener("click", () => {
   slideToPrev();
 });
 
-citrusStella_carouselInner.addEventListener("transitionend", () => {
+efi_testimonial_carouselInner.addEventListener("transitionend", () => {
   if (direction === -1) {
     if (jump > 1) {
       for (let i = 0; i < jump; i++) {
         activeSlide++;
-        citrusStella_carouselInner.append(
-          citrusStella_carouselInner.firstElementChild
+        efi_testimonial_carouselInner.append(
+          efi_testimonial_carouselInner.firstElementChild
         );
       }
     } else {
       activeSlide++;
-      citrusStella_carouselInner.append(
-        citrusStella_carouselInner.firstElementChild
+      efi_testimonial_carouselInner.append(
+        efi_testimonial_carouselInner.firstElementChild
       );
     }
   } else if (direction === 1) {
     if (jump > 1) {
       for (let i = 0; i < jump; i++) {
         activeSlide--;
-        citrusStella_carouselInner.prepend(
-          citrusStella_carouselInner.lastElementChild
+        efi_testimonial_carouselInner.prepend(
+          efi_testimonial_carouselInner.lastElementChild
         );
       }
     } else {
       activeSlide--;
-      citrusStella_carouselInner.prepend(
-        citrusStella_carouselInner.lastElementChild
+      efi_testimonial_carouselInner.prepend(
+        efi_testimonial_carouselInner.lastElementChild
       );
     }
   }
 
-  citrusStella_carouselInner.style.transition = "none";
-  citrusStella_carouselInner.style.transform = "translateX(0%)";
+  efi_testimonial_carouselInner.style.transition = "none";
+  efi_testimonial_carouselInner.style.transform = "translateX(0%)";
   setTimeout(() => {
     jump = 1;
-    citrusStella_carouselInner.style.transition = "all ease .5s";
+    efi_testimonial_carouselInner.style.transition = "all ease .5s";
   });
   updateIndicators();
 });
 
 document
-  .querySelectorAll(".citrusStella_carousel-indicators span")
+  .querySelectorAll(".efi_testimonial_carousel-indicators span")
   .forEach((item) => {
     item.addEventListener("click", (e) => {
       let slideTo = parseInt(e.target.dataset.slideTo);
       let indicators = document.querySelectorAll(
-        ".citrusStella_carousel-indicators span"
+        ".efi_testimonial_carousel-indicators span"
       );
 
       indicators.forEach((item, index) => {
@@ -118,25 +118,25 @@ document
     });
   });
 
-citrusStella_carousel.addEventListener("mouseover", () => {
+efi_testimonial_carousel.addEventListener("mouseover", () => {
   loop(false);
 });
 
-citrusStella_carousel.addEventListener("mouseout", () => {
+efi_testimonial_carousel.addEventListener("mouseout", () => {
   loop(true);
 });
 
-//citrusStella_carousel functions
+//efi_testimonial_carousel functions
 
 function loadIndicators() {
   slides.forEach((slide, index) => {
     if (index === 0) {
       document.querySelector(
-        ".citrusStella_carousel-indicators"
+        ".efi_testimonial_carousel-indicators"
       ).innerHTML += `<span data-slide-to="${index}" class="active"></span>`;
     } else {
       document.querySelector(
-        ".citrusStella_carousel-indicators"
+        ".efi_testimonial_carousel-indicators"
       ).innerHTML += `<span data-slide-to="${index}"></span>`;
     }
   });
@@ -149,34 +149,34 @@ function updateIndicators() {
     activeSlide = totalSlides - 1;
   }
   document
-    .querySelector(".citrusStella_carousel-indicators span.active")
+    .querySelector(".efi_testimonial_carousel-indicators span.active")
     .classList.remove("active");
   document
-    .querySelectorAll(".citrusStella_carousel-indicators span")
+    .querySelectorAll(".efi_testimonial_carousel-indicators span")
     [activeSlide].classList.add("active");
 }
 
 function slideToNext() {
   if (direction === 1) {
     direction = -1;
-    citrusStella_carouselInner.prepend(
-      citrusStella_carouselInner.lastElementChild
+    efi_testimonial_carouselInner.prepend(
+      efi_testimonial_carouselInner.lastElementChild
     );
   }
 
-  citrusStella_carousel.style.justifyContent = "flex-start";
-  citrusStella_carouselInner.style.transform = `translateX(-${step}%)`;
+  efi_testimonial_carousel.style.justifyContent = "flex-start";
+  efi_testimonial_carouselInner.style.transform = `translateX(-${step}%)`;
 }
 
 function slideToPrev() {
   if (direction === -1) {
     direction = 1;
-    citrusStella_carouselInner.append(
-      citrusStella_carouselInner.firstElementChild
+    efi_testimonial_carouselInner.append(
+      efi_testimonial_carouselInner.firstElementChild
     );
   }
-  citrusStella_carousel.style.justifyContent = "flex-end";
-  citrusStella_carouselInner.style.transform = `translateX(${step}%)`;
+  efi_testimonial_carousel.style.justifyContent = "flex-end";
+  efi_testimonial_carouselInner.style.transform = `translateX(${step}%)`;
   loop(false);
 }
 
@@ -191,7 +191,7 @@ function loop(status) {
 }
 // pov loader add. before full load js pov none.
 document.addEventListener("DOMContentLoaded", function () {
-  citrusStella_carousel.style.display = "flex";
+  efi_testimonial_carousel.style.display = "flex";
 });
 
 /*-----------------------
